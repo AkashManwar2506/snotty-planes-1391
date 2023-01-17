@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #logo{
+            width: 90%;
+            margin: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo div:nth-child(2){
+            border: 1px solid black;
+            width: 50%;
+        }
+        #logo img{
+            width: 180px;
+        }
+        #navbar{
+            width: 80%;
+            margin-left: 70px;
+            margin-top: 20px;
+        }
+        nav{
+            display: flex;
+            justify-content:space-between;
+            font-size: 14px;
+        }
+        nav p{
+            cursor: pointer;
+        }
+        nav p:hover{
+            color: rgb(5, 162, 224);
+        }
+        #one{
+            background-color: #424242;
+            margin-top: 10px;
+        }
+        #one div:nth-child(1){
+            color: aliceblue;
+            padding: 10px 10px;
+            text-align: center;
+        }
+        #one div:nth-child(1) a{
+            color: aliceblue;
+        }
+        #two{
+            text-align: center;
+            margin-top: 15px;
+        }
+        #two:hover{
+            cursor: pointer;
+        }
+        #five{
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #five h3{
+            text-align: center;
+        }
+        #five img{
+            width: 300px;
+            height: 300px;
+        }
+        #five img,p:hover{
+            cursor: pointer;
+        }
+        #five div{
+            margin-top: 15px;
+            gap: 25px;
+        }
+        #first,#second{
+            display: flex;
+        }
+        #first,#second p{
+            text-align: center;
+        }
+        #first p{
+            margin-top: 8px;
+        }
+        #second p{
+            margin-top: 8px;
+        }
+        #eight {
+            display: flex;
+            width: 90%;
+            margin: auto;
+            gap: 8px;
+            margin-top: 50px;
+        }
+        #eight img{
+            width: 100%;
+            height:400px;
+        }
+        #eight img:hover{
+            cursor: pointer;
+        }
+        #eight a{
+            color: black;
+        }
+        #twelve{
+            width: 90%;
+            display: flex;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #twelve img:hover{
+            cursor: pointer;
+        }
+        #twelve a{
+            color: black;
+            font-size: 20px;
+        }
+        #thirteen{
+            width: 90%;
+            display: flex;
+            margin: auto;
+            margin-top: 10px;
+        }
+        #thirteen img:hover{
+            cursor: pointer;
+        }
+        #thirteen a{
+            color: black;
+            font-size: 20px;
+        }
+        #thirteen div:nth-child(2){
+            margin-left: 20px;
+        }
+        #seventeen{
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #eighteen{
+            width: 90%;
+            margin: auto;
+            margin-top: 15px;
+        }
+        #seventeen,#eighteen:hover{
+            cursor: pointer;
+        }
+        #nineteen{
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            display: flex;
+            
+            font-size: 14px;
+        }
+        #nineteen>div:nth-child(1){
+            width: 53%;
+        }
+        #nineteen>div:nth-child(1) a{
+            color:#2979FF;
+        }
+        #nineteen h1{
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            letter-spacing: 0px;
+            line-height: 1;
+            text-transform: capitalize;
+        }
+        #nineteen>div:nth-child(2){
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #nineteen>div:nth-child(2) p:hover{
+            cursor: pointer;
+        }
+        #nineteen>div:nth-child(2) div{
+            padding-top: 50px;
+        }
+        #nineteen>div:nth-child(1) p{
+            margin-bottom: 50px;
+            font-size: 14.5px;
+        }
+        #nineteen>div:nth-child(2) p{
+            margin-bottom: 5px;
+        }
+        #nineteen>div:nth-child(2){
+            width: 45%;
+        }
+        #twenty{
+            display: flex;
+            margin-top: 500px;
+            width: 90%;
+            margin: auto;
+            gap: 3px;
+            font-size: 13px;
+           
+        }
+        #twenty>div:hover{
+            background-color: #000000;
+        }
+        #twenty img{
+            width: 50px;
+        }
+        #twenty>div{
+            display: flex;
+            gap:15px;
+            padding:20px 20px 20px 20px;
+            background-color: #333;
+            color: white;
+        }
+        #twenty p{
+            margin-top: 10px;
+        }
+        #footer1{
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            font-size: 13px;
+            justify-content: space-between;
+        }
+        #footer1>div:nth-child(1)>div{
+            display: flex;
+        }
+        #footer1 img{
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        #footer1 p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #footer1>div:nth-child(2)>div{
+            display: flex;
+        }
+        #footer1 strong{
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        #footer1 a{
+            color: black
+        }
+        #footer1>div:nth-child(2) img{
+            width: 60px;
+            height: 60px;
+            padding-right: 10px;
+        }
+        #footer1>div:nth-child(1){
+            width: 22%;
+        }
+        #footer1>div:nth-child(2){
+            width: 25%;
+        }
+        #footer1 input{
+            height: 40px;
+            width: 200px;
+            margin-top: 20px;
+        }
+        #line{
+            width: 83%;
+            margin: auto;
+            margin-top: 10px;
+            color: #4242421a;
+        }
+        #footer2{
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+        }
+        #footer2>div{
+            display: flex;
+        }
+        #footer2 img{
+            width: 28px;
+            height: 28px;
+        }
+        #footer2>div:last-child{
+            gap: 20px;
+        }
+        #footer2>div:nth-child(1){
+            gap: 20px;
+        }
+        #footer2 p{
+            margin-bottom: 20px;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+        #footer2>div:nth-child(2){
+            aspect-ratio: 3/2;
+            object-fit: contain;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <div>
+            <img src="https://www.finishline.com/store/assets/images/FINISH_LINE_2_COLOR_MED_300x44.png" alt="Error">
+        </div>
+        <div>
+           
+        </div>
+
+    </div>
+    <div id="navbar">
+        <nav>
+            <p>NEW ARRIVALS</p>
+            <p>MEN</p>
+            <p>WOMEN</p>
+            <p>BOYS</p>
+            <p>GIRLS</p>
+            <p>CLOTHING</p>
+            <p>ACCESSORIES</p>
+            <p>SALE</p>
+            <p>BRANDS</p>
+            <p>RELEASES</p>
+        </nav>
+    </div>
+    <div id="one">
+        <div>
+            <b>WEEKEND SAVINGS</b>
+            <p>70% off Select Styles with code SAVE70</p>
+            <div>
+                <a href="">Shop Now</a>
+                <a href="">Details</a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div id="two">
+        <img src="https://finishline.a.bigcontent.io/v1/static/JD_FNL_010923_Jordan_Flush_Email_Banner_Desktop_1213x300V1" alt="Error">
+    </div>
+    <div id="three">
+
+    </div>
+    <div id="four">
+
+    </div>
+    <div id="five">
+        <h3>SHOP THE LATEST & GREATEST STYLES</h3>
+        <div id="first">
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DV0826_001_P1?$Small$" alt="Error">
+                <p>Recent Releases</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DN9782_001_P1?$Small$" alt="Error">
+                <p>Jordan</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/CW2288_111_P1?$Small$" alt="Error">
+                <p>Best Sellers</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DD6958_001_P1?$Small$" alt="Error">
+                <p>Basketball</p>
+            </div>
+        </div>
+        <div id="second">
+            <div>
+                <img src="https://media.finishline.com/s/finishline/DD5016_001?$Small$" alt="Error">
+                <p>Boots</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/s/finishline/NF0A7ZGX_610?$Small$" alt="Error">
+                <p>Matching Sets</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DV0537_070_M3?$Small$" alt="Error">
+                <p>Best Sellers</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/s/finishline/DX2036_434?$Small$" alt="Error">
+                <p>Outerwear up to 40% off</p>
+            </div>
+        </div>
+    </div>
+    <div id="six">
+
+    </div>
+    <div id="seven">
+
+    </div>
+    <div id="eight">
+        <div>
+            <img src="https://media.finishline.com/i/finishline/FNL_011022_3Up_Tile_MostFavorited_604x604?fmt=webp" alt="Error">
+            <a href="">Most Favorited Styles</a>
+        </div>
+        <div>
+            <img src="https://media.finishline.com/i/finishline/FNL_060822_B&W-Styles_3Up_Homepage_Tile_604x604?fmt=webp" alt="Error">
+            <a href="">Top Trending</a>
+        </div>
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_122222_HP_Tile_Recentrelease_604x604?fmt=webp" alt="Error">
+            <a href="">Recent Releases</a>
+        </div>
+    </div>
+    <div id="nine">
+
+    </div>
+    <div id="ten">
+
+    </div>
+    <div id="eleven">
+
+    </div>
+    <div id="twelve">
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/20220825-FL-Holiday-11-0467_604x604_v1?fmt=webp" alt="Error">
+            <a href="">Outerwear</a>
+        </div>
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_20220311_Multi_Vendor_Classics_PhotoStudio_604x604?fmt=webp" alt="Error">
+            <a href="">Classics</a>
+        </div>
+    </div>
+    <div id="thirteen">
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_121222_Birkenstock_HP_Tile_604x604?fmt=webp" alt="Error">
+            <a href="">Comfy Kicks</a>
+        </div>
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_20221221_Jordan_Everyday_Laydown_Tees_photostudio_01_604x604?fmt=webp" alt="Error">
+            <a href="">Jordan Everyday</a>
+        </div>
+    </div>
+    <div id="fourteen">
+
+    </div>
+    <div id="fifteen">
+
+    </div>
+    <div id="sixteen">
+
+    </div>
+    <div id="seventeen">
+        <img src="https://finishline.a.bigcontent.io/v1/static/FNL_052722_App_HP_Banner_Desktop_1213x295" alt="Error">
+    </div>
+    <div id="eighteen">
+        <img src="https://media.finishline.com/i/finishline/FNL_081920_Shop_Your_Store_HP_Banner_Desktop_1213x150_1" alt="Error">
+    </div>
+    <div id="nineteen">
+        <div>
+            <h1>FINISH LINE: THE INTERSECTION OF STYLE & SPORT.</h1>
+            <p>Shoes, sneakers, runners, trainers, or kicks––whatever you call them, we have you covered with the latest footwear to fit your style. Check out new arrivals from premium brands like Nike, adidas, Jordan, Vans, Puma and more.</p>
+            <p>With on-trend hoodies, jackets, joggers and <a href="">matching sets</a>, we’ve got you covered with the hottest sportswear. Whether you’re shopping for yourself or your friends, we carry the best <a href="">gifts for runners</a>, top gifts from <a href="">The North Face</a>, <a href="">Nike</a> and <a href="">adidas</a>, as well as high-heat <a href="">new arrivals</a> from your favorite brands. We stock the freshest sports gear and shoes to keep you at the top of your game. Complete any look with a <a href="">crossbody bag</a> or <a href="">New Era hat</a>, and keep kicks fresh with premium <a href="">shoe cleaning kits</a>.</p>
+            <p>Stay up-to-date on the <a href="">latest sneaker drops</a> and sneaker trends when you follow our blog and social handles. From <a href="">running shoes</a> to <a href="">basketball shoes</a>, classic <a href="">high-tops</a> and <a href="">retro sneakers</a>, Finish Line is your one-stop shop. Plus, you can always buy online and pickup in-store, so you can get your favorite sneakers even faster with free, same-day pickup at your <a href="">local Finish Line</a>!</p>
+        </div>
+        <div>
+            <div>
+                <p>Jordan Retro Shoes</p>
+                <p>Jordan Retro 1</p>
+                <p>Nike VaporMax</p>
+                <p>Nike Air Max</p>
+                <p>Nike Air Max 90</p>
+                <p>Nike Air Max 97</p>
+                <p>Nike Air Max 270</p>
+                <p>Nike Air Force 1</p>
+                <p>Nike LeBron</p>
+                <p>Nike LeBron</p>
+            </div>
+            <div>
+                <p>adidas Boost</p>
+                <p>adidas Ultraboost</p>
+                <p>adidas NMD</p>
+                <p>adidas Superstar</p>
+                <p>New Balance Shoes</p>
+                <p>On Running Shoes</p>
+                <p>Vans Shoes</p>
+                <p>Steph Curry Shoes</p>
+                <p>Reebok Sneakers</p>
+                <p>Timberland Boots</p>
+            </div>
+        </div>
+    </div>
+    <div id="twenty">
+        <div>
+            <div>
+                <img src="https://www.bing.com/images/blob?bcid=S.P.de0reCMFH57vAemVwDCSLL3h.....wg" alt="Error">
+            </div>
+            <div>
+                <b>ORDER ASSISTANCE    ▶</b>
+                <p>Get help with ordering on our app, online or by phone</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.bing.com/images/blob?bcid=S2da6F3gACMFH57vAemVwDCSLL3h.....8o" alt="Error">
+            </div>
+            <div>
+                <b>TRACK YOUR ORDER  ▶</b>
+                <p>Use your order number to check the location of your order</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.bing.com/images/blob?bcid=S5RdowFyIiMFH57vAemVwDCSLL3h.....9o" alt="Error">
+            </div>
+            <div>
+                <b>MAKE A RETURN ▶</b>
+                <p>Print a return slip and make a easy return</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.bing.com/images/blob?bcid=S.fX-reYriMFH57vAemVwDCSLL3h.....xA" alt="Error">
+            </div>
+            <div>
+                <b>FIND A STORE ▶</b>
+                <p>Our associates are the best in the business, see for yourself</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer1">
+        <div>
+            <div>
+                <img src="https://www.bing.com/images/blob?bcid=S0Kst1gJRCMFH57vAemVwDCSLL3h.....-A" alt="Error">
+                <strong>GET POINTS. GAIN ACCESS. BOOST YOUR STATUS.</strong>
+            </div>
+            <p>Use your STATUS across our brand family, JD Sports and Finish Line.</p>
+            <a href="">Join STATUS</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.bh9ZjEB7bDb_ugrE2Js5CQAAAA?pid=ImgDet&rs=1" alt="Error">
+                <strong>SHOPPING, REWARDS, INSPIRATION & MORE</strong>
+            </div>
+            <p>Access it all with exclusive product releases, big ticket giveaways, & app-only content.</p>
+            <a href="https://www.finishline.com/app">Get the app</a>
+        </div>
+        <div>
+            <strong>GET TO KNOW US</strong>
+            <p>Our Company</p>
+            <p>Our Brand Family</p>
+            <p>Your Foundation</p>
+            <p>Carrers</p>
+            <p>Blog</p>
+        </div>
+        <div>
+            <strong>CUSTOMER CARE</strong>
+            <p>FAQs</p>
+            <p>Shipping Rates & Policies</p>
+            <p>Return Policies</p>
+            <p>Cancel an Order</p>
+            <p>Contact Us</p>
+            <p>COVID-19 Response</p>
+            <p>Website Accessibility Policy</p>
+        </div>
+        <div>
+            <strong>GIFT CARDS</strong>
+            <p>Buy a Gift Card</p>
+            <p>Check Your Balance</p>
+            <strong>GET ON THE LIST</strong><br>
+            <input type="text" placeholder="  ✉️ Enter your email">
+        </div>
+    </div>
+    <div id="line">_______________________________________________________________________________________________________________________________</div>
+    <div id="footer2">
+        <div>
+            <div>
+                <p>2023 Finish Line, Inc. All Rights Reserved.</p>
+                <p>  Excercise My Rights</p>
+            </div>
+            <div>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <p>Interest-Based Ads Policy</p>
+            </div>
+            <div>
+                <p>Terms of Use</p>
+            </div>
+            <div>
+                <p>Site Map</p>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/finishline"><img src="https://www.bing.com/images/blob?bcid=SxvHp.sDbyMFH57vAemVwDCSLL3h.....5Y" alt="Error"></a>
+            <a href="https://www.snapchat.com/add/FinishLineUSA"><img src="https://www.bing.com/images/blob?bcid=S62eYc17cCMFH57vAemVwDCSLL3h.....yo" alt="Error"></a>
+            <a href="https://www.youtube.com/user/FinishLineTV1"><img src="https://www.bing.com/images/blob?bcid=Swwn7cFP5iMFH57vAemVwDCSLL3h.....xo" alt="Error"></a>
+            <a href="https://twitter.com/finishline"><img src="https://www.bing.com/images/blob?bcid=S5oc.ZRIPSMFH57vAemVwDCSLL3h.....wI" alt="Error"></a>
+            <a href="https://www.facebook.com/finishline"><img src="https://www.bing.com/images/blob?bcid=S2.zEEVcFSMFqxcxoNWLuD9SqbotqVTdP6k" alt="Error"></a>
+        </div>
+    </div>
+</body>
+</html>
