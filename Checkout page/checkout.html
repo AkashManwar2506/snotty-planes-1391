@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout</title>
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+
+<body>
+    <div id="main-container">
+
+        <!-- -------------- Left section ---------------- -->
+        <div id="left-section">
+
+            <div id="left-input-section">
+                <h3>SHIPPING</h3>
+                <hr>
+                <form id="personal-details">
+
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" id="name" placeholder="First Name" class="userInput">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="lastName" placeholder="Last Name" class="userInput">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" class="address userInput" placeholder="Address / PO Box">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" class="address userInput" placeholder="Apt / Suite (Optional)">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" id="city" placeholder="City" class="userInput">
+                        </div>
+                        <div class="input-box">
+                            <select name="State" id="state" class="userInput">
+                                <option value="">State</option>
+                                <option value="Banglore">Punjab</option>
+                                <option value="mumbai">Maharashtra</option>
+                                <option value="pune">Telangana</option>
+                                <option value="delhi">Madhya Pradesh</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="zipCode" placeholder="Zip / Postal Code" class="userInput">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="number" id="phone" placeholder="Phone" class="userInput" min="10" max="12">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" id="email" placeholder="Email Address" class="userInput">
+                        </div>
+                    </div>
+
+                    <div id="delivery-section">
+                        <h4>Delivery Method</h4>
+                        <div class="delivery-type">
+                            <div>
+                                <input type="radio" class="myradio" name="delivery_method" id="standard" value="standard" checked>
+                                <label for="standard">Standard (Jan 23 - 25, 2023)</label>
+                            </div>
+                            <span>$8.00</span>
+                        </div>
+                        <div class="delivery-type">
+                            <div>
+                                <input type="radio" class="myradio" name="delivery_method" id="upgraded" value="upgraded">
+                                <label for="upgraded">Upgraded (Jan 20 - 24, 2023)</label>
+                            </div>
+                            <span>$10.99</span>
+                        </div>
+                        <div class="delivery-type">
+                            <div>
+                                <input type="radio" class="myradio" name="delivery_method" id="rush" value="rush">
+                                <label for="rush">Rush (Friday, Jan 20, 2023)</label>
+                            </div>
+                            <span>$22.99</span>
+                        </div>
+                        <div class="delivery-type">
+                            <div>
+                                <input type="radio" class="myradio" name="delivery_method" id="express" value="express">
+                                <label for="express">Express (Thursday, Jan 19, 2023)</label>
+                            </div>
+                            <span>$32.99</span>
+                        </div>
+                    </div>
+                    <div id="continue-payment-section">
+                        <p><a href="#">See Shipping Methods & Policies.</a></p>
+                        <p>Delivery estimates are subject to change.</p>
+                        <button type="submit" id="continue-to-payment-btn">CONTINUE TO PAYMENT</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- -------------------------- Right section ---------------------- -->
+        <div id="right-section">
+            <div id="purchase-summary">
+                <div class="info-group">
+                    <p><strong>Purchase Summary</strong></p>
+                </div>
+                <hr style="border: none; height: .5px; background-color: rgb(181, 181, 181);">
+                <div class="info-group">
+                    <div id="enter-coupon-code">
+                        <p style="padding-bottom: 3px;">Enter a coupon code</p>
+                        <span id="show-coupon-field">+</span>
+                    </div>
+                    <div id="coupon-section">
+                        <input type="text" id="coupon" placeholder="Coupone Code" style="padding: 12px 10px; width: 100%;">
+                        <button id="coupon-apply-btn">Apply</button>
+                    </div>
+                </div>
+                <hr style="border: none; height: .5px; background-color: rgb(181, 181, 181);">
+                <div class="info-group delivery-type">
+                    <p>Subtotal:</p>
+                    <p>$79.00</p>
+                </div>
+                <div class="info-group delivery-type">
+                    <p>Shipping:</p>
+                    <p id="shipping-charges">8.00</p>
+                </div>
+                <div class="info-group delivery-type">
+                    <p>Tax:</p>
+                    <p>TBD</p>
+                </div>
+                <hr style="border: none; height: 2px; background-color:#333;;">
+                <div class="info-group delivery-type">
+                    <p><strong>Total:</strong></p>
+                    <p><strong style="color: #333;">$87.00</strong></p>
+                </div>
+            </div>
+
+            <div id="bag-item-count">
+                <hr>
+                <p>In your Bag (no. of items)</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./checkout.js"></script>
+
+</html>

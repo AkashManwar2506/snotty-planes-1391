@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgb(181, 181, 181);
+}
+#main-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dashed green;
+}
+
+
+#left-section {
+    /* border: 1px solid red; */
+    width: 65%;
+    
+}
+#left-input-section {
+    padding: 12px;
+}
+#left-input-section > h3{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    line-height: 22.4px;
+}
+
+form{
+    /* border: 1px solid red; */
+    padding: 10px 5px;
+}
+
+.input-group {
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    /* border: 1px dashed blue; */
+}
+
+.input-box {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.input-box .userInput {
+    padding: 12px 10px; 
+    width: 100%;
+}
+
+#delivery-section{
+    width: 75%;
+    /* border: 1px solid red; */
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+#delivery-section > h4 {
+    font-size: 11.7px;
+    font-weight: 700;
+    line-height: 16.38px;
+}
+.delivery-type {
+    position: relative;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-type label{
+    font-size: 14px;
+    line-height: 25.1999px;
+}
+.delivery-type span {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.88px;
+}
+
+
+#continue-payment-section p{
+    color: #707070;
+    font-size: 13px;
+    line-height: 18.46px;
+}
+#continue-payment-section p:nth-child(2){
+    margin-bottom: 20px;
+}
+
+#continue-payment-section button{
+    font-size: 18.66px;
+    font-weight: 700;
+    line-height: 18.66px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: 46.6562px;
+    width: 386.891px;
+    margin: 0 0 13px 0;
+    padding: 13px;
+    border: 1px solid white;
+    /* display: block; */
+    cursor: pointer;
+    background-color: #008FDB;
+    color: #fff;
+}
+#continue-payment-section button:hover{
+    background-color: #0081c6;
+}
+
+ /* ----------  RIGHT SECTION CSS------- */
+#right-section {
+    width: 35%;
+    /* border: 2px solid black; */
+    padding: 12px;
+}
+
+#purchase-summary {
+    /* width: 100%; */
+    padding:20px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+#purchase-summary p {
+    font-size: small;
+    font-weight: 100;
+}
+
+.info-group {
+    padding: 8px;
+}
+
+#bag-item-count hr{
+    margin: 6px 0;
+}
+#bag-item-count p {
+    font-size: small;
+    font-weight: 100;
+}
+
+#coupon-section {
+    display: none;
+    margin: 8px 2px;
+}
+#coupon-apply-btn {
+    width: 25%;
+    color: #0081c6;
+    border: 1px solid #0081c6;
+}
+
+#enter-coupon-code {
+    display: flex;
+    justify-content: space-between;
+}
+#enter-coupon-code:hover{cursor: pointer;}
