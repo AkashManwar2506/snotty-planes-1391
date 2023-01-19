@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment & Billing</title>
+    <link rel="stylesheet" href="./payment.css">
+    <script src="https://kit.fontawesome.com/0db55d1582.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -------- Steps section ---------- -->
+    <div id="outer-body">
+        <div id="top-section">
+            <div>
+
+                <div class="circle"><i class="fa-solid fa-check"></i></div>
+                <div class="horizontal-gap-line"></div>
+                <div class="circle">2</div>
+                
+            </div>
+        </div>
+        <div id="bottom-section">
+
+            <div class="steps">Shipping</div>
+            <div class="steps">Payment & Billing</div>
+
+        </div>
+    </div>
+
+
+    <div id="main-container">
+
+        <!-- -------------- Left section ---------------- -->
+        <div id="left-section">
+
+            <form>
+                <h3>Select Payment Method</h3>
+                <hr style="margin: 20px 2px;">
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="paypal" value="paypal" checked>
+                    <label for="paypal"></label>
+                    <div for="paypal">
+                        <img style="width: 70%;" src="https://www.finishline.com/store/assets/images/PayPal.svg" alt="">
+                    </div>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="visa" value="visa">
+                    <label for="visa"></label>
+                    <div for="visa">
+                        <img src="https://www.finishline.com/store/assets/images/visa-payment-bg.png" alt="">
+                    </div>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="afterpay" value="afterpay">
+                    <label for="afterpay"></label>
+                    <div for="afterpay">
+                        <img style="width: 70%;" src="https://www.finishline.com/store/assets/svg/logos/FL_afterpay.svg" alt="">
+                    </div>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment-method" id="klarna" value="klarna">
+                    <label for="klarna"></label>
+                    <div for="klarna">
+                        <img src="https://www.finishline.com/store/assets/svg/logos/FL_klarnaV2.svg" alt="">
+                    </div>
+                </div>
+
+                <div id="additional-offers">
+                    <hr>
+                    <div>
+                        <h3>Use a gift card</h3>
+                        <span>+</span>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Use a STATUS Reward</h3>
+                        <span>+</span>
+                    </div>
+                    <hr>
+                </div>
+
+                <div id="check-section">
+                    <input type="checkbox" id="donate" value="donate">
+                    <p>Round up to the nearest dollar to support your community. You're donating to JD Finish Line Youth
+                        Foundation Charitable Fund, a donor-advised fund at a sponsoring charity. <stong><a
+                                href="#">Donate More ></a></stong>
+                    </p>
+                </div>
+
+                <div id="continue-payment-section">
+                    <button type="submit" id="continue-to-payment-btn">
+                        <div class="payment-btn-type" for="paypal">
+                            <img style="width: 60%; margin-left: 20px; " src="https://www.finishline.com/store/assets/images/PayPal.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </form>
+
+
+        </div>
+
+        <!-- --------------------- Right section ------------------------ -->
+        <div id="right-section">
+            <div id="purchase-summary">
+                <div class="info-group">
+                    <p><strong>Purchase Summary</strong></p>
+                </div>
+                <hr style="border: none; height: .5px; background-color: rgb(181, 181, 181);">
+                <div class="info-group">
+                    <div id="enter-coupon-code">
+                        <p style="padding-bottom: 3px;">Enter a coupon code</p>
+                        <span id="show-coupon-field">+</span>
+                    </div>
+                    <div id="coupon-section">
+                        <input type="text" id="coupon" placeholder="Coupone Code"
+                            style="padding: 12px 10px; width: 100%;">
+                        <button id="coupon-apply-btn">Apply</button>
+                    </div>
+                </div>
+                <hr style="border: none; height: .5px; background-color: rgb(181, 181, 181);">
+                <div class="info-group delivery-type">
+                    <p>Subtotal:</p>
+                    <p>$79.00</p>
+                </div>
+                <div class="info-group delivery-type">
+                    <p>Shipping:</p>
+                    <p>$8.00</p>
+                </div>
+                <div class="info-group delivery-type">
+                    <p>Tax:</p>
+                    <p>TBD</p>
+                </div>
+                <hr style="border: none; height: 2px; background-color:#333;;">
+                <div class="info-group delivery-type">
+                    <p><strong>Total:</strong></p>
+                    <p><strong style="color: #333;">$87.00</strong></p>
+                </div>
+            </div>
+
+            <div id="bag-item-count">
+                <hr>
+                <p>In your Bag (no. of items)</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./payment.js"></script>
+
+</html>
