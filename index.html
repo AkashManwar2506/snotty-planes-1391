@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+
     <style>
         *{
             margin: 0%;
@@ -42,17 +44,28 @@
             color: rgb(5, 162, 224);
         }
         #one{
-            background-color: #424242;
+            background-color:#333;
             margin-top: 10px;
+            font-size: 13px;
         }
-        #one div:nth-child(1){
-            color: aliceblue;
-            padding: 10px 10px;
+        #one>div{
+            color:white;
             text-align: center;
+            padding: 10px 0px 3px 0px;
         }
-        #one div:nth-child(1) a{
-            color: aliceblue;
+        #one>div a{
+            color:white;
         }
+        #one>div>div{
+            justify-content: center;
+            display: flex;
+            gap: 15px;
+        }
+        #one p{
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
         #two{
             text-align: center;
             margin-top: 15px;
@@ -74,6 +87,7 @@
         }
         #five img,p:hover{
             cursor: pointer;
+            text-decoration: underline;
         }
         #five div{
             margin-top: 15px;
@@ -274,10 +288,10 @@
         #footer2{
             margin: auto;
             margin-top: 30px;
-            margin-bottom: 50px;
             display: flex;
             width: 80%;
             justify-content: space-between;
+            /* border: 1px solid red; */
         }
         #footer2>div{
             display: flex;
@@ -301,12 +315,18 @@
         #footer2>div:nth-child(2){
             aspect-ratio: 3/2;
             object-fit: contain;
+            margin-top: 10px;
+        }
+        #footer2>div:nth-child(2) i{
+            font-size: 30px;
+            color: #424242b0;
         }
        
 
     </style>
 </head>
 <body>
+
     <div id="logo">
         <div>
             <img src="https://www.finishline.com/store/assets/images/FINISH_LINE_2_COLOR_MED_300x44.png" alt="Error">
@@ -330,19 +350,21 @@
             <p>RELEASES</p>
         </nav>
     </div>
-    <div id="one">
+    <!-- <div id="one">
         <div>
-            <b>WEEKEND SAVINGS</b>
-            <p>70% off Select Styles with code SAVE70</p>
+            <strong>Buy Now, Pay Later.</strong>
+            <p>Interest Free.</p>
             <div>
-                <a href="">Shop Now</a>
-                <a href="">Details</a>
+                <div><a href="">Afterpay</a></div>
+                <div><a href="">Klarna</a></div>
             </div>
         </div>
         <div>
-
+            <strong>GET THE APP</strong>
+            <p>The best way to shop,redeem,and get access</p>
+            <p>Learn More</p>
         </div>
-    </div>
+    </div> -->
     <div id="two">
         <img src="https://finishline.a.bigcontent.io/v1/static/JD_FNL_010923_Jordan_Flush_Email_Banner_Desktop_1213x300V1" alt="Error">
     </div>
@@ -591,11 +613,11 @@
             </div>
         </div>
         <div>
-            <a href="https://www.instagram.com/finishline"><img src="https://www.bing.com/images/blob?bcid=SxvHp.sDbyMFH57vAemVwDCSLL3h.....5Y" alt="Error"></a>
-            <a href="https://www.snapchat.com/add/FinishLineUSA"><img src="https://www.bing.com/images/blob?bcid=S62eYc17cCMFH57vAemVwDCSLL3h.....yo" alt="Error"></a>
-            <a href="https://www.youtube.com/user/FinishLineTV1"><img src="https://www.bing.com/images/blob?bcid=Swwn7cFP5iMFH57vAemVwDCSLL3h.....xo" alt="Error"></a>
-            <a href="https://twitter.com/finishline"><img src="https://www.bing.com/images/blob?bcid=S5oc.ZRIPSMFH57vAemVwDCSLL3h.....wI" alt="Error"></a>
-            <a href="https://www.facebook.com/finishline"><img src="https://www.bing.com/images/blob?bcid=S2.zEEVcFSMFqxcxoNWLuD9SqbotqVTdP6k" alt="Error"></a>
+            <a href="https://www.instagram.com/finishline"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.snapchat.com/add/FinishLineUSA"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/FinishLineTV1"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/finishline"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/finishline"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </div>
     </div>
 </body>
