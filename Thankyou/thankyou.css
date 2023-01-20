@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-container {
+    margin: auto;
+    width: 800px;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+#heading{
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+    /* border: 1px solid green;*/
+}
+
+h1 {
+    padding: 10px 65px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.49998px;
+    line-height: 33px;
+    /* text-align: left; */
+}
+
+#return-policy {
+    margin: 30px auto 45px;
+    width: fit-content;
+}
+#return-policy a {
+    font-size: 14px;
+}
+a {
+    color: black;
+}
+
+
+#message {
+    /* border: 1px solid green; */
+    padding: 20px;
+}
+
+#message p {
+    text-align: center;
+}
