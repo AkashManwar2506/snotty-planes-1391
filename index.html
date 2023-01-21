@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="icon" href="./favicon.jpg"/>
+
+   
+    <title>Fashion Line: Shoes, Sneakers, Athletic Clothing & Gear</title>
+
+    <style>
+
+     /* resetting paddings and margin to 0 */
+ body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  #top_nav a {
+    text-decoration: none;
+  }
+  #bottom_nav a {
+    text-decoration: none;
+  }
+ 
+  /* nav styling */
+  #top_nav {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:92.5%;
+    height: 50px;
+    margin:auto;
+    padding-top: 14px;
+    /* position: sticky;
+    z-index: 10;
+    background-color: white;
+    top: 0%; */
+  }
+
+  #top_nav > div:nth-child(2) {
+    display: flex;
+    font-size: 13px;
+    text-align: center;
+  }
+ 
+  #top_nav >div:nth-child(2){
+   margin: 20px;
+    color:#333333;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #top_nav >div:nth-child(2) div{
+   border: 1px solid rgb(212, 199, 199);
+   width: 18%;
+
+   display:flex; 
+   align-items: center; 
+   justify-content:center;
+   gap: 5px;
+  }
+  #top_nav >div:nth-child(2) div img{
+    width: 25px;
+    height: 25px;
+  }
+
+
+  #top_nav >div:nth-child(2) input{
+    font-size: 14px;
+    border: none;
+   border: 1px solid  rgb(212, 199, 199);
+   width: 40%;
+   padding-left: 38px;
+
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn8-WzsjUa0NJ71w1B9yj9XZ8rPVzWq0ISQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position:4%;
+  background-size: 20px
+  }
+  #top_nav >div:nth-child(2) p:hover{
+  color: #008fdb;
+  cursor: pointer;
+  }
+  #bag_btn{
+   border-radius: 0%;
+   width: 16px;
+   font-size: 12px;
+   font-weight: bold;
+   position:absolute;
+   margin-left: -29px;
+   margin-top: 17px ;
+   background-color: black;
+   color: white;
+  }
+
+  /* account btn styling */
+
+
+
+
+  /* account btn styling */
+ 
+
+  #bottom_nav {
+    /* border: 1px solid blue; */
+    padding: 7px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    color: #333333;
+    font-size: 13px;
+  }
+  #bottom_nav > div > p:hover {
+    color: #008fdb;
+    cursor: pointer;
+  }
+
+  /* dropdown styling */
+
+  #bottom_nav .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: #ffffff;
+    min-width: 160px;
+    width: 100%;
+    border: 1px solid rgb(235, 227, 227);
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+    padding-bottom: 7px;
+  }
+
+
+
+  #bottom_nav .dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+
+  #bottom_nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content p{
+    font-size: 12px;
+  }
+  .dropdown-content h4{
+    margin: 0px;
+  }
+
+  .dropdown-content p:hover, .dropdown-content h4:hover{
+    text-decoration: underline;
+  }
+
+  /* categories buttons  */
+
+  
+  #new_arrivals_parent p:hover {
+    cursor: pointer;
+    color: #008fdb;
+  }
+
+  #new_arrivals {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+  }
+  #new_arrivals img {
+    width: 100%;
+    cursor: pointer;
+  }
+  #new_arrivals p {
+    cursor: pointer;
+  }
+  #new_arrivals > div {
+    width: 20%;
+  }
+
+
+  #men_nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    /* margin-left: -150px; */
+    gap: 20px;
+    margin: auto;
+  }
+  #men_nav p {
+    margin: 0px;
+  }
+  #men_nav > div {
+    width: 20%;
+  }
+
+  #women_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+  }
+  #women_nav p {
+    margin: 0px;
+  }
+  #women_nav > div {
+    width: 20%;
+  }
+  #boys_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+  }
+  #boys_nav p {
+    margin: 0px;
+  }
+  #boys_nav > div {
+    width: 20%;
+  }
+  #girls_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+  }
+  #girls_nav p {
+    margin: 0px;
+  }
+  #girls_nav > div {
+    width: 20%;
+  }
+  #clothing_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+  }
+  #clothing_nav p {
+    margin: 0px;
+  }
+  #clothing_nav > div {
+    width: 20%;
+  }
+  #accessories_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+  }
+  #accessories_nav p {
+    margin: 0px;
+  }
+  #accessories_nav > div {
+    width: 20%;
+  }
+  #sale_nav {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+  }
+  #sale_nav p {
+    margin: 0px;
+  }
+  #sale_nav > div {
+    width: 20%;
+  }
+
+  /* search functionality styling */
+  #search_div {
+    margin: auto;
+    border: 1px solid rgb(238, 231, 231);
+    width: 451px;
+    height: 450px;
+    overflow: auto;
+    padding-top: 20px;
+    
+  }
+ #search_div::-webkit-scrollbar {
+ display: block;
+}
+#search_content{
+    display: none;
+}
+  #card {
+    margin: auto;
+    border-bottom: 1px solid rgb(228, 220, 220);
+    border-bottom: 1px solid rgb(228, 220, 220);
+
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+    line-height: 2px;
+  }
+  #card img {
+    width: 100px;
+  }
+  #card p{
+    font-size: 14px;
+  }
+/* /////////////////////////////////////////////////////////////////////// */
+
+#one {
+  background-color: #333;
+  margin-top: 10px;
+  font-size: 13px;
+}
+#one > div {
+        color: white;
+        text-align: center;
+        padding: 10px 0px 3px 0px;
+      }
+      #one > div a {
+        color: white;
+      }
+      #one > div > div {
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+      }
+      #one p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+      #two {
+        text-align: center;
+        margin-top: 15px;
+      }
+      #two:hover {
+        cursor: pointer;
+      }
+      #five {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #five h3 {
+        text-align: center;
+      }
+      #five img {
+        width: 300px;
+        height: 300px;
+      }
+      #five img,
+      p:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      #five div {
+        margin-top: 15px;
+        gap: 25px;
+      }
+      #first,
+      #second {
+        display: flex;
+      }
+      #first,
+      #second p {
+        text-align: center;
+      }
+      #first p {
+        margin-top: 8px;
+      }
+      #second p {
+        margin-top: 8px;
+      }
+      #eight {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        gap: 8px;
+        margin-top: 50px;
+      }
+      #eight img {
+        width: 100%;
+        height: 400px;
+      }
+      #eight img:hover {
+        cursor: pointer;
+      }
+      #eight a {
+        color: black;
+      }
+      #twelve {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #twelve img:hover {
+        cursor: pointer;
+      }
+      #twelve a {
+        color: black;
+        font-size: 20px;
+      }
+      #thirteen {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+      }
+      #thirteen img:hover {
+        cursor: pointer;
+      }
+      #thirteen a {
+        color: black;
+        font-size: 20px;
+      }
+      #thirteen div:nth-child(2) {
+        margin-left: 20px;
+      }
+      #seventeen {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #eighteen {
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+      }
+      #seventeen,
+      #eighteen:hover {
+        cursor: pointer;
+      }
+      #nineteen {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: flex;
+
+        font-size: 14px;
+      }
+      #nineteen > div:nth-child(1) {
+        width: 53%;
+      }
+      #nineteen > div:nth-child(1) a {
+        color: #2979ff;
+      }
+      #nineteen h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0px;
+        line-height: 1;
+        text-transform: capitalize;
+      }
+      #nineteen > div:nth-child(2) {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #nineteen > div:nth-child(2) p:hover {
+        cursor: pointer;
+      }
+      #nineteen > div:nth-child(2) div {
+        padding-top: 50px;
+      }
+      #nineteen > div:nth-child(1) p {
+        margin-bottom: 50px;
+        font-size: 14.5px;
+      }
+      #nineteen > div:nth-child(2) p {
+        margin-bottom: 5px;
+      }
+      #nineteen > div:nth-child(2) {
+        width: 45%;
+      }
+      #twenty {
+        display: flex;
+        margin-top: 500px;
+        width: 90%;
+        margin: auto;
+        gap: 3px;
+        font-size: 13px;
+      }
+      #twenty > div:hover {
+        background-color: #000000;
+      }
+      #twenty i {
+        font-size: 40px;
+        margin-left: 10px;
+      }
+      #twenty > div {
+        display: flex;
+        gap: 15px;
+        padding: 20px 20px 5px 20px;
+        background-color: #333;
+        color: white;
+      }
+      #twenty p {
+        margin-top: 10px;
+      }
+      #footer1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        font-size: 13px;
+        justify-content: space-between;
+      }
+      #footer1 > div:nth-child(1) > div {
+        display: flex;
+      }
+      #footer1 img {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+      }
+      #footer1 p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #footer1 > div:nth-child(2) > div {
+        display: flex;
+      }
+      #footer1 strong {
+        padding-top: 10px;
+        margin-bottom: 10px;
+      }
+      #footer1 a {
+        color: black;
+      }
+      #footer1 > div:nth-child(2) img {
+        width: 60px;
+        height: 60px;
+        padding-right: 10px;
+      }
+      #footer1 > div:nth-child(1) {
+        width: 22%;
+      }
+      #footer1 > div:nth-child(2) {
+        width: 25%;
+      }
+      #footer1 input {
+        height: 40px;
+        width: 200px;
+        margin-top: 20px;
+      }
+      #line {
+        width: 83%;
+        margin: auto;
+        margin-top: 10px;
+        color: #4242421a;
+      }
+      #footer2 {
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        /* border: 1px solid red; */
+      }
+      #footer2 > div {
+        display: flex;
+      }
+      #footer2 img {
+        width: 28px;
+        height: 28px;
+      }
+      #footer2 > div:last-child {
+        gap: 20px;
+      }
+      #footer2 > div:nth-child(1) {
+        gap: 20px;
+      }
+      #footer2 p {
+        margin-bottom: 20px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+      }
+      #footer2 > div:nth-child(2) {
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        margin-top: 10px;
+      }
+      #footer2 > div:nth-child(2) i {
+        font-size: 30px;
+        color: #424242b0;
+      }      
+     
+    </style>
+  </head>
+  <body>
+    <div id="top_nav">
+
+      <div>
+        <a href="./index.html">
+          <img width="300px" 
+          
+            src="https://i.postimg.cc/YSGDTh4w/fashion-line-styled.jpg"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <div>
+       
+        <input id="search_input" type="text" placeholder="Search" />
+
+        <div style="width: 22%;" >
+          <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRavj9_Ks_pfBuHO-3VMC8kxky4mR6ntn-iCg&usqp=CAU" alt="">
+          <p>Choose a Store</p>
+        </div>
+
+
+     
+
+
+        <div  >
+          <img  src="https://th.bing.com/th/id/OIP.ukklKD6JKea-pZBXGmsoDQHaIK?w=186&h=205&c=7&r=0&o=5&pid=1.7" alt="">
+          <p id="account_btn">Account</p>
+
+        
+          <!-- above code for account_btn -->
+        
+        </div> 
+
+       
+        <div >
+          <!-- bag here -->
+          <p id="bag_btn" >0</p>
+          <img  src="https://th.bing.com/th/id/OIP.9EnlsurtnPQ8dpe863Z0uAHaHa?w=218&h=218&c=7&r=0&o=5&pid=1.7" alt="">
+          <p >Bag</p></div>
+        <div >
+          <img src="data:image/png;base64,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" alt="">
+          <p>Admin</p></div>
+
+      </div>
+    </div>
+
+    <div id="bottom_nav">
+
+      <div class="dropdown">
+        <p class="dropbtn">NEW ARRIVALS</p>
+
+        <div id="new_arrivals_parent" class="dropdown-content">
+          <!-- div should be here -->
+          <div id="new_arrivals">
+            <div>
+              <a href="#">
+                <img
+                  src="https://media.finishline.com/s/finishline/DQ4122_100?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"><p>Men's New Arrivals</p></a>
+            </div>
+
+            <div>
+              <a href="#">
+                <img
+                  src="https://media.finishline.com/s/finishline/DV0826_001?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Women's New Arrivals</p> </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="https://media.finishline.com/s/finishline/DQ8423_014?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Boys's New Arrivals</p> </a>
+            </div>
+            <div>
+              <a href="#">
+                <img
+                  src="https://media.finishline.com/s/finishline/CT3839G_107?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Girl's New Arrivals</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="dropdown">
+        <p class="dropbtn">MEN</p>
+
+        <div id="men_parent" class="dropdown-content">
+          <div id="men_nav">
+            <div>
+              <a href="#"><h4>Shoes</h4></a>
+              <a href=""><p>Basketball</p></a>
+              <a href=""><p>Running</p></a>
+              <a href=""><p>Casual</p></a>
+              <a href=""><p>Boots</p></a>
+              <a href=""><p>Training & Cleats</p></a>
+              <a href=""><p>Sandals,Slides & Slippers</p></a>
+              <a href=""><p>Sizes 14-20</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Styles Under $100</p></a>
+              <a href=""><p>All Shoes</p></a>
+            </div>
+
+            <div>
+              <a href="#"><h4>Clothing</h4></a>
+              <a href=""><p>Hoodies & Sweatshirts</p></a>
+              <a href=""><p>Sweatpants & Joggers</p></a>
+              <a href=""><p>Jackets, Coats & Vests</p></a>
+              <a href=""><p>Shirts, Tanks & Graphic Tees</p></a>
+              <a href=""><p>Shorts & Swimwear</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>2 fro $40 Tees & Shorts</p></a>
+              <a href=""><p>Fan Gear & Jerseys</p></a>
+              <a href=""><p>Socks & Underwear</p></a>
+              <a href=""><p>Denim & Jeans</p></a>
+              <a href=""><p>Styles Under $50</p></a>
+              <a href=""><p>All Clothing</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Brands</h4></a>
+              <a href=""><p>Nike</p></a>
+              <a href=""><p>Jordan</p></a>
+              <a href=""><p>adidas</p></a>
+              <a href=""><p>New Balance</p></a>
+              <a href=""><p>On</p></a>
+              <a href=""><p>Timberland</p></a>
+              <a href=""><p>Converse</p></a>
+              <a href=""><p>Puma</p></a>
+              <a href=""><p>Crocs</p></a>
+              <a href=""><p>The North Face</p></a>
+              <a href=""><p>Birkenstock</p></a>
+              <a href=""><p>Reebok</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Trending Now</h4></a>
+              <a href=""><p>Trending Styles</p></a>
+              <a href=""><p>Recent Releases</p></a>
+              <a href=""><p>Winter Essentials</p></a>
+              <a href=""><p>All White Styles</p></a>
+              <a href=""><p>Mens's Cargo</p></a>
+              <a href=""><p>New Era Team Gear</p></a>
+              <a href=""><p>Nike Tech Fleece Outfits</p></a>
+            </div>
+
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/DQ4122_100?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Nike Air Max</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">WOMEN</p>
+
+        <div id="women_parent" class="dropdown-content">
+          <div id="women_nav">
+            <div>
+              <a href="#"><h4>Running</h4></a>
+              <a href=""><p>Casual</p></a>
+              <a href=""><p>Basketball</p></a>
+              <a href=""><p>Boots</p></a>
+              <a href=""><p>Training & Cleats</p></a>
+              <a href=""><p>Sandals,Slides & Slippers</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Styles Under $100</p></a>
+              <a href=""><p>All Shoes</p></a>
+            </div>
+
+            <div>
+              <a href="#"><h4>Clothing</h4></a>
+              <a href=""><p>Plus Size (1X-4X)</p></a>
+              <a href=""><p>Hoodies & Sweatshirts</p></a>
+              <a href=""><p>Sweatpants & Joggers</p></a>
+              <a href=""><p>Jackets & Coats</p></a>
+              <a href=""><p>Leggings</p></a>
+              <a href=""><p>Shirts, Tanks & Graphic Tees</p></a>
+              <a href=""><p>Shorts & Bike Shorts</p></a>
+              <a href=""><p>Sports Bras & Swim</p></a>
+              <a href=""><p>Dresses & Bodysuits</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Styles Under $50</p></a>
+              <a href=""><p>All Clothing</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Brands</h4></a>
+              <a href=""><p>Nike</p></a>
+              <a href=""><p>adidas</p></a>
+              <a href=""><p>Jordan</p></a>
+              <a href=""><p>On</p></a>
+              <a href=""><p>New Balance</p></a>
+              <a href=""><p>Converse</p></a>
+              <a href=""><p>Crocs</p></a>
+              <a href=""><p>The North Face</p></a>
+              <a href=""><p>Timberland</p></a>
+              <a href=""><p>Puma</p></a>
+              <a href=""><p>Brooks</p></a>
+              <a href=""><p>Birkenstock</p></a>
+              <a href=""><p>Sore!</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Trending Now</h4></a>
+              <a href=""><p>Trending Styles</p></a>
+              <a href=""><p>Recent Releases</p></a>
+              <a href=""><p>Winter Essentials</p></a>
+              <a href=""><p>All White Styles</p></a>
+              <a href=""><p>Nike Tech Fleece Outfits</p></a>
+            </div>
+
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/DV0826_001?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Nike Need it Now</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">BOYS</p>
+
+        <div id="boys_parent" class="dropdown-content">
+          <div id="boys_nav">
+            <div>
+              <a href="#"><h4>Shoes</h5></a>
+              <a href=""><p>Big Kids (Sizes 3.5-7)</p></a>
+              <a href=""><p>Little Kids (Sizes 10.5-3)</p></a>
+              <a href=""><p>Toddler (Sizes 2-10)</p></a>
+              <a href=""><p>Infant (Sizes 2-10)</p></a>
+              <a href=""><p>Boots</p></a>
+              <a href=""><p>Sandals,Slides & Slippers</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Styles Under $80</p></a>
+              <a href=""><p>All Boy's Shoes</p></a>
+              <a href=""><p>All Kid's Shoes</p></a>
+            </div>
+
+            <div>
+              <a href="#"><h4>Clothing</h5></a>
+              <a href=""><p>Big Kids (Sizes XS-XL)</p></a>
+              <a href=""><p>Little Kids (Sizes 4-7)</p></a>
+              <a href=""><p>Toddler (Sizes 2T-4T)</p></a>
+              <a href=""><p>Infant (Sizes 0-24M)</p></a>
+              <a href=""><p>Sweatshirts & Jackets</p></a>
+              <a href=""><p>Shirts</p></a>
+              <a href=""><p>Shorts & Pants</p></a>
+              <a href=""><p>Styles Under $25</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>All Clothing</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Brands</h5></a>
+              <a href=""><p>Nike</p></a>
+              <a href=""><p>adidas</p></a>
+              <a href=""><p>Jordan</p></a>
+              <a href=""><p>Timberland</p></a>
+              <a href=""><p>Converse</p></a>
+              <a href=""><p>New Balance</p></a>
+              <a href=""><p>Puma</p></a>
+              <a href=""><p>Crocs</p></a>
+              <a href=""><p>Reebok</p></a>
+              <a href=""><p>Vans</p></a>
+              <a href=""><p>The North Face</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Trending Now</h5></a>
+              <a href=""><p>Trending Styles</p></a>
+              <a href=""><p>Winter Essentials</p></a>
+              <a href=""><p>Laceless Shoes</p></a>
+              <a href=""><p>All White Styles</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>Nike Tech Fleece Outfits</p></a>
+            </div>
+
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/DQ8423_014?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Boots</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">GIRLS</p>
+
+        <div id="girls_parent" class="dropdown-content">
+          <div id="girls_nav">
+            <div>
+              <a href="#"><h4>Shoes</h5></a>
+              <a href=""><p>Big Kids (Sizes 3.5-7)</p></a>
+              <a href=""><p>Little Kids (Sizes 10.5-3)</p></a>
+              <a href=""><p>Toddler (Sizes 2-10)</p></a>
+              <a href=""><p>Infant (Sizes 0-4)</p></a>
+              <a href=""><p>Boots</p></a>
+              <a href=""><p>Sandals,Slides & Slippers</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Styles Under $80</p></a>
+              <a href=""><p>All Girl's Shoes</p></a>
+              <a href=""><p>All Kid's Shoes</p></a>
+            </div>
+
+            <div>
+              <a href="#"><h4>Clothing</h5></a>
+              <a href=""><p>Big Kids (Sizes XS-XL)</p></a>
+              <a href=""><p>Little Kids (Sizes 4-7)</p></a>
+              <a href=""><p>Toddler (Sizes 2T-4T)</p></a>
+              <a href=""><p>Infant (Sizes 0-24M)</p></a>
+              <a href=""><p>Sweatshirts & Jackets</p></a>
+              <a href=""><p>Shirts</p></a>
+              <a href=""><p>Shorts, Pants & Leggings</p></a>
+              <a href=""><p>Styles Under $25</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>All Clothing</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Brands</h5></a>
+              <a href=""><p>Nike</p></a>
+              <a href=""><p>adidas</p></a>
+              <a href=""><p>Jordan</p></a>
+              <a href=""><p>Timberland</p></a>
+              <a href=""><p>Converse</p></a>
+              <a href=""><p>New Balance</p></a>
+              <a href=""><p>Puma</p></a>
+              <a href=""><p>Crocs</p></a>
+              <a href=""><p>Vans</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Trending Now</h5></a>
+              <a href=""><p>Trending Styles</p></a>
+              <a href=""><p>Winter Essentials</p></a>
+              <a href=""><p>Laceless Shoes</p></a>
+              <a href=""><p>All White Styles</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>Nike Tech Fleece Outfits</p></a>
+            </div>
+
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/CT3839G_107?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Nike Air Force 1</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">CLOTHING</p>
+
+        <div id="clothing_parent" class="dropdown-content">
+          <div id="clothing_nav">
+            <div>
+              <a href="#"><h4>Men's Clothing</h5></a>
+              <a href=""><p>Hoodies & Sweatshirts</p></a>
+              <a href=""><p>Sweatpants & Joggers</p></a>
+              <a href=""><p>Jackets, Coats & Vests</p></a>
+              <a href=""><p>Shirts, Tanks & Graphic Tees</p></a>
+              <a href=""><p>Shorts & Swimwear</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>2 fro $40 Tees & Shorts</p></a>
+              <a href=""><p>Fan Gear & Jerseys</p></a>
+              <a href=""><p>Socks & Underwear</p></a>
+              <a href=""><p>Denim & Jeans</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Styles Under $50</p></a>
+              <a href=""><p>All Men's Clothing</p></a>
+            </div>
+
+            <div>
+              <a href="#"><h4>Women's Clothing</h5></a>
+              <a href=""><p>Plus Size (1X-4X)</p></a>
+              <a href=""><p>Hoodies & Sweatshirts</p></a>
+              <a href=""><p>Sweatpants & Joggers</p></a>
+              <a href=""><p>Jackets & Coats</p></a>
+              <a href=""><p>Shirts & Tanks</p></a>
+              <a href=""><p>Leggings</p></a>
+              <a href=""><p>Shorts & Bike Shorts</p></a>
+              <a href=""><p>Sports Bras & Swim</p></a>
+              <a href=""><p>Dresses & Bodysuits</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Styles Under $50</p></a>
+              <a href=""><p>All Women's Clothing</p></a>
+            </div>
+            <div>
+              <a href="#"><h4>Boy's Clothing</h5></a>
+              <a href=""><p>Big Kids (Sizes 3.5-7)</p></a>
+              <a href=""><p>Little Kids (Sizes 10.5-3)</p></a>
+              <a href=""><p>Toddler (Sizes 2-10)</p></a>
+              <a href=""><p>Infant (Sizes 2-10)</p></a>
+              <a href=""><p>Shirts</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>Styles Under $25</p></a>
+              <a href=""><p>All Boy's Clothing</p></a>
+            </div>
+
+            <div>
+              <a href="#"><h4>Girl's Clothing</h5></a>
+              <a href=""><p>Big Kids (Sizes 3.5-7)</p></a>
+              <a href=""><p>Little Kids (Sizes 10.5-3)</p></a>
+              <a href=""><p>Toddler (Sizes 2-10)</p></a>
+              <a href=""><p>Infant (Sizes 0-4)</p></a>
+              <a href=""><p>Shirts</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Best Sellers</p></a>
+              <a href=""><p>Matching Sets</p></a>
+              <a href=""><p>Styles Under $25</p></a>
+              <a href=""><p>All Girl's Clothing</p></a>
+            </div>
+
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/CW4298_010?$Main_onModel$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+
+              <a href="#"> <p>Sweatshirts & Joggers</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">ACCESSORIES</p></p>
+
+        <div id="accessories_parent" class="dropdown-content">
+          <div id="accessories_nav">
+            <div>
+              <a href="#"><h4>Men's Accessories</h5></a>
+              <a href=""><p>Hats & Headbands</p></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Bags & Backpacks</p></a>
+              <a href=""><p>Underwear</p></a>
+              <a href=""><p>Crocs Jibbitz</p></a>
+              <a href=""><p>Shoe Care</p></a>
+              <a href=""><p>Fitness Gear</p></a>
+              <a href=""><p>Beanies, Gloves & Scarves</p></a>
+              <a href=""><p>Water Bottles</p></a>
+              <a href=""><p>All Accessories</p></a>
+            </div>
+      
+            <div>
+              <a href="#"><h4>Women's Accessories</h5></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Hats</p></a>
+              <a href=""><p>Bags & Backpacks</p></a>
+              <a href=""><p>Crocs Jibbitz</p></a>
+              <a href=""><p>Shoe Care</p></a>
+              <a href=""><p>Headbands & Hair Ties</p></a>
+              <a href=""><p>Fitness Gear</p></a>
+              <a href=""><p>Beanies, Gloves & Scarves</p></a>
+              <a href=""><p>Water Bottles</p></a>
+              <a href=""><p>All Accessories</p></a>
+            </div>
+      
+            <div>
+              <a href="#"><h4>Boy's Accessories</h5></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Hats</p></a>
+              <a href=""><p>Bags & Backpacks</p></a>
+              <a href=""><p>Shoe Care</p></a>
+              <a href=""><p>Crocs Jibbitz</p></a>
+              <a href=""><p>Fitness Gear</p></a>
+              <a href=""><p>Underwear</p></a>
+              <a href=""><p>Beanies, Gloves & Scarves</p></a>
+              <a href=""><p>Water Bottles</p></a>
+              <a href=""><p>All Accessories</p></a>
+            </div>
+      
+            <div>
+              <a href="#"><h4>Girl's Accessories</h5></a>
+              <a href=""><p>Socks</p></a>
+              <a href=""><p>Hats, Headbands, & Hair Ties</p></a>
+              <a href=""><p>Bags & Backpacks</p></a>
+              <a href=""><p>Shoe Care</p></a>
+              <a href=""><p>Crocs Jibbitz</p></a>
+              <a href=""><p>Fitness Gear</p></a>
+              <a href=""><p>Beanies, Gloves & Scarves</p></a>
+              <a href=""><p>Water Bottles</p></a>
+              <a href=""><p>All Accessories</p></a>
+            </div>
+      
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/913011_260?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+      
+              <a href="#"> <p>Hats</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">SALE</p>
+
+        <div id="sale_parent" class="dropdown-content">
+          <div id="sale_nav">
+            <div>
+              <a href="#"><h4>Men</h4></a>
+              <a href=""><p>Shoes</p></a>
+              <a href=""><p>Clothing</p></a>
+              <a href=""><p>Accessories</p></a>
+              <a href=""><p>All Men's Sale</p></a>
+            </div>
+      
+            <div>
+              <a href="#"><h4>Womens</h4></a>
+              <a href=""><p>Shoes</p></a>
+              <a href=""><p>Clothing</p></a>
+              <a href=""><p>Accessories</p></a>
+              <a href=""><p>All Women's Sale</p></a>
+            </div>
+      
+            <div>
+              <a href="#"><h4>Kids</h4></a>
+              <a href=""><p>Big Kids (Sizes 3.5-7)</p></a>
+              <a href=""><p>Little Kids (Sizes 10.5-3)</p></a>
+              <a href=""><p>Toddler (Sizes 2-10)</p></a>
+      
+              <a href=""><p>Clothing</p></a>
+              <a href=""><p>Accessories</p></a>
+              <a href=""><p>All Kid's Sale</p></a>
+            </div>
+      
+            <div>
+              <a href="#"><h4>Hot Deals</h4></a>
+              <a href=""><p>Up to 50% Off Nike</p></a>
+              <a href=""><p>Up to 40% Off Nike</p></a>
+              <a href=""><p>Shoes Under $100</p></a>
+              <a href=""><p>Clothing Under $100</p></a>
+              <a href=""><p>2 for $40 Tees</p></a>
+              <a href=""><p>2 for $30 Kids Tees</p></a>
+            </div>
+      
+            <div>
+              <a href="#">
+                <img
+                  width="100%"
+                  src="https://media.finishline.com/s/finishline/DD6958_160?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245&fmt=webp"
+                  alt=""
+              /></a>
+      
+              <a href="#"> <p>New Markdowns</p> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">BRANDS</p>
+
+        <!-- <div id="brands_parent" class="dropdown-content">here</div> -->
+      </div>
+
+      <div class="dropdown">
+        <p class="dropbtn">RELEASES</p>
+
+        <!-- <div id="releases_parent" class="dropdown-content">here</div> -->
+      </div>
+
+
+      <div id="search_content" style="z-index: 10;background:white;margin-top: -10px;margin-left: 36px;position: absolute;float: left;" >
+        <h3 id="data_length" style="text-align:center;        border: 1px solid rgb(238, 231, 231);padding: 12px;padding-bottom: 5px;border-bottom: none;
+        ">Enter search query</h3>
+
+    <div id="search_div">
+ 
+        <!-- cards here -->
+
+      </div>
+ 
+      </div>
+
+      <div id="one">
+        <div>
+            <strong>Buy Now, Pay Later.</strong>
+            <p>Interest Free.</p>
+            <div>
+                <div><a href="">Afterpay</a></div>
+                <div><a href="">Klarna</a></div>
+            </div>
+        </div>
+        <!-- <div>
+            <strong>GET THE APP</strong>
+            <p>The best way to shop,redeem,and get access</p>
+            <p>Learn More</p>
+        </div> -->
+      </div>
+      <div id="two">
+        <img src="https://finishline.a.bigcontent.io/v1/static/JD_FNL_010923_Jordan_Flush_Email_Banner_Desktop_1213x300V1" alt="Error">
+      </div>
+      <div id="three">
+      
+      </div>
+      <div id="four">
+      
+      </div>
+      <div id="five">
+        <h3>SHOP THE LATEST & GREATEST STYLES</h3>
+        <div id="first">
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DV0826_001_P1?$Small$" alt="Error">
+                <p>Recent Releases</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DN9782_001_P1?$Small$" alt="Error">
+                <p>Jordan</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/CW2288_111_P1?$Small$" alt="Error">
+                <p>Best Sellers</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DD6958_001_P1?$Small$" alt="Error">
+                <p>Basketball</p>
+            </div>
+        </div>
+        <div id="second">
+            <div>
+                <img src="https://media.finishline.com/s/finishline/DD5016_001?$Small$" alt="Error">
+                <p>Boots</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/s/finishline/NF0A7ZGX_610?$Small$" alt="Error">
+                <p>Matching Sets</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/i/finishline/DV0537_070_M3?$Small$" alt="Error">
+                <p>Best Sellers</p>
+            </div>
+            <div>
+                <img src="https://media.finishline.com/s/finishline/DX2036_434?$Small$" alt="Error">
+                <p>Outerwear up to 40% off</p>
+            </div>
+        </div>
+      </div>
+      <div id="six">
+      
+      </div>
+      <div id="seven">
+      
+      </div>
+      <div id="eight">
+        <div>
+            <img src="https://media.finishline.com/i/finishline/FNL_011022_3Up_Tile_MostFavorited_604x604?fmt=webp" alt="Error">
+            <a href="">Most Favorited Styles</a>
+        </div>
+        <div>
+            <img src="https://media.finishline.com/i/finishline/FNL_060822_B&W-Styles_3Up_Homepage_Tile_604x604?fmt=webp" alt="Error">
+            <a href="">Top Trending</a>
+        </div>
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_122222_HP_Tile_Recentrelease_604x604?fmt=webp" alt="Error">
+            <a href="">Recent Releases</a>
+        </div>
+      </div>
+      <div id="nine">
+      
+      </div>
+      <div id="ten">
+      
+      </div>
+      <div id="eleven">
+      
+      </div>
+      <div id="twelve">
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/20220825-FL-Holiday-11-0467_604x604_v1?fmt=webp" alt="Error">
+            <a href="">Outerwear</a>
+        </div>
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_20220311_Multi_Vendor_Classics_PhotoStudio_604x604?fmt=webp" alt="Error">
+            <a href="">Classics</a>
+        </div>
+      </div>
+      <div id="thirteen">
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_121222_Birkenstock_HP_Tile_604x604?fmt=webp" alt="Error">
+            <a href="">Comfy Kicks</a>
+        </div>
+        <div>
+            <img src="https://finishline.a.bigcontent.io/v1/static/FNL_20221221_Jordan_Everyday_Laydown_Tees_photostudio_01_604x604?fmt=webp" alt="Error">
+            <a href="">Jordan Everyday</a>
+        </div>
+      </div>
+      <div id="fourteen">
+      
+      </div>
+      <div id="fifteen">
+      
+      </div>
+      <div id="sixteen">
+      
+      </div>
+      <div id="seventeen">
+        <img src="https://finishline.a.bigcontent.io/v1/static/FNL_052722_App_HP_Banner_Desktop_1213x295" alt="Error">
+      </div>
+      <div id="eighteen">
+        <img src="https://media.finishline.com/i/finishline/FNL_081920_Shop_Your_Store_HP_Banner_Desktop_1213x150_1" alt="Error">
+      </div>
+      <div id="nineteen">
+        <div>
+            <h1>FINISH LINE: THE INTERSECTION OF STYLE & SPORT.</h1>
+            <p>Shoes, sneakers, runners, trainers, or kicks––whatever you call them, we have you covered with the latest footwear to fit your style. Check out new arrivals from premium brands like Nike, adidas, Jordan, Vans, Puma and more.</p>
+            <p>With on-trend hoodies, jackets, joggers and <a href="">matching sets</a>, we’ve got you covered with the hottest sportswear. Whether you’re shopping for yourself or your friends, we carry the best <a href="">gifts for runners</a>, top gifts from <a href="">The North Face</a>, <a href="">Nike</a> and <a href="">adidas</a>, as well as high-heat <a href="">new arrivals</a> from your favorite brands. We stock the freshest sports gear and shoes to keep you at the top of your game. Complete any look with a <a href="">crossbody bag</a> or <a href="">New Era hat</a>, and keep kicks fresh with premium <a href="">shoe cleaning kits</a>.</p>
+            <p>Stay up-to-date on the <a href="">latest sneaker drops</a> and sneaker trends when you follow our blog and social handles. From <a href="">running shoes</a> to <a href="">basketball shoes</a>, classic <a href="">high-tops</a> and <a href="">retro sneakers</a>, Finish Line is your one-stop shop. Plus, you can always buy online and pickup in-store, so you can get your favorite sneakers even faster with free, same-day pickup at your <a href="">local Finish Line</a>!</p>
+        </div>
+        <div>
+            <div>
+                <p>Jordan Retro Shoes</p>
+                <p>Jordan Retro 1</p>
+                <p>Nike VaporMax</p>
+                <p>Nike Air Max</p>
+                <p>Nike Air Max 90</p>
+                <p>Nike Air Max 97</p>
+                <p>Nike Air Max 270</p>
+                <p>Nike Air Force 1</p>
+                <p>Nike LeBron</p>
+                <p>Nike LeBron</p>
+            </div>
+            <div>
+                <p>adidas Boost</p>
+                <p>adidas Ultraboost</p>
+                <p>adidas NMD</p>
+                <p>adidas Superstar</p>
+                <p>New Balance Shoes</p>
+                <p>On Running Shoes</p>
+                <p>Vans Shoes</p>
+                <p>Steph Curry Shoes</p>
+                <p>Reebok Sneakers</p>
+                <p>Timberland Boots</p>
+            </div>
+        </div>
+      </div>
+      <div id="twenty">
+        <div>
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div>
+                <b>ORDER ASSISTANCE <i style="font-size: 15px;" class="fa fa-caret-right" aria-hidden="true"></i></b>
+                <p>Get help with ordering on our app, online or by phone</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa fa-truck" aria-hidden="true"></i>
+            </div>
+            <div>
+                <b>TRACK YOUR ORDER<br> <i style="font-size: 15px;" class="fa fa-caret-right" aria-hidden="true"></i></b>
+                <p>Use your order number to check the location of your order</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </div>
+            <div>
+                <b>MAKE A RETURN  <i style="font-size: 15px;" class="fa fa-caret-right" aria-hidden="true"></i></b>
+                <p>Print a return slip and make an easy return</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div>
+                <b>FIND A STORE <i style="font-size: 15px;" class="fa fa-caret-right" aria-hidden="true"></i></b>
+                <p>Our associates are the best in the business, see for yourself</p>
+            </div>
+        </div>
+      </div>
+      <div id="footer1">
+        <div>
+            <div>
+                <img src="https://www.bing.com/images/blob?bcid=S0Kst1gJRCMFH57vAemVwDCSLL3h.....-A" alt="Error">
+                <strong>GET POINTS. GAIN ACCESS. BOOST YOUR STATUS.</strong>
+            </div>
+            <p>Use your STATUS across our brand family, JD Sports and Finish Line.</p>
+            <a href="">Join STATUS</a>
+        </div>
+        <div>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.bh9ZjEB7bDb_ugrE2Js5CQAAAA?pid=ImgDet&rs=1" alt="Error">
+                <strong>SHOPPING, REWARDS, INSPIRATION & MORE</strong>
+            </div>
+            <p>Access it all with exclusive product releases, big ticket giveaways, & app-only content.</p>
+            <a href="https://www.finishline.com/app">Get the app</a>
+        </div>
+        <div>
+            <strong>GET TO KNOW US</strong>
+            <p>Our Company</p>
+            <p>Our Brand Family</p>
+            <p>Your Foundation</p>
+            <p>Carrers</p>
+            <p>Blog</p>
+        </div>
+        <div>
+            <strong>CUSTOMER CARE</strong>
+            <p>FAQs</p>
+            <p>Shipping Rates & Policies</p>
+            <p>Return Policies</p>
+            <p>Cancel an Order</p>
+            <p>Contact Us</p>
+            <p>COVID-19 Response</p>
+            <p>Website Accessibility Policy</p>
+        </div>
+        <div>
+            <strong>GIFT CARDS</strong>
+            <p>Buy a Gift Card</p>
+            <p>Check Your Balance</p>
+            <strong>GET ON THE LIST</strong><br>
+            <input type="text" placeholder="  ✉️ Enter your email">
+        </div>
+      </div>
+      <div id="line">_______________________________________________________________________________________________________________________________</div>
+      <div id="footer2">
+        <div>
+            <div>
+                <p>2023 Finish Line, Inc. All Rights Reserved.</p>
+                <p>  Excercise My Rights</p>
+            </div>
+            <div>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <p>Interest-Based Ads Policy</p>
+            </div>
+            <div>
+                <p>Terms of Use</p>
+            </div>
+            <div>
+                <p>Site Map</p>
+            </div>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/finishline"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.snapchat.com/add/FinishLineUSA"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/FinishLineTV1"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/finishline"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/finishline"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+  </body>
+</html>
+
+<script src="">
+
+
+
+      // if logged in then innertext of account button will be user name
+  let loggedIn=localStorage.getItem("loggedIn");
+  let user=localStorage.getItem("loggedInUser")
+  // console.log(user)
+
+  if(loggedIn=="true"){
+    document.querySelector("#account_btn").innerText=user;
+  }
+
+  // making the cart dynamic 
+
+  let bag_btn=document.querySelector("#bag_btn");
+  
+  let bag_items=localStorage.getItem("bag_items");
+
+  if(bag_items>=1 && loggedIn=="true"){
+    bag_btn.innerText=bag_items;
+  }else{
+    bag_btn.style.display="none"
+  }
+
+
+
+
+
+
+
+  //fetching data here
+  let url = "https://gifted-blue-binturong.cyclic.app/mens";
+  let globalData=[]
+
+  fetch(url)
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => {
+      console.log(data);
+      globalData=data;
+      displayData(data);
+    });
+
+ 
+
+    // mapping data here
+ let search_div=document.querySelector("#search_div");
+
+   function displayData(data){
+    search_div.innerHTML=null;
+    data.map((item,index)=>{
+ 
+        search_div.innerHTML+=`
+        <div id="card">
+        <div>
+            <img
+          src=${item.productImage}
+          alt=${item.product_name}
+        />
+        </div>
+
+        <div>
+          <h5>${item.product_card.name.substring(0,33)}</h5>
+          <p> ${"$ "+item.fullPrice}</p>
+          <p>${item.product_card.aggregateRating.ratingValue+' ★★★★★'+" "}  <span>${"("+item.product_card.aggregateRating.reviewCount+")"}</span></p>
+        </div>
+      </div>
+    </div>
+      `
+
+    })
+
+    }
+
+
+//    search functionality here
+let search_content=document.querySelector("#search_content");
+
+    let search_input=document.querySelector("#search_input");
+    search_input.addEventListener("input",searchFilter);
+
+    document.querySelector("body").addEventListener("click",()=>{
+        search_content.style.display="none";
+    })
+    // search_input.addEventListener("click",()=>{
+    //  search_content.style.display="none"
+    // })
+   
+    let data_length=document.querySelector("#data_length")
+
+    function searchFilter(){
+     console.log("success")
+     let filtered_data= globalData.filter((item,index)=>{
+
+return item.product_card.name.toUpperCase().includes(search_input.value.toUpperCase());
+
+
+        })
+        data_length.innerText=`${filtered_data.length} search results found`
+
+            
+        search_content.style.display="block"
+        displayData(filtered_data)
+
+        // console.log(filtered_data)
+    }
+
+///////////////////////////////////////////////////////////////////////////////
+
+
+</script>
