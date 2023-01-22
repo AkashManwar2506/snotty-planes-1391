@@ -1,0 +1,143 @@
+* {
+    font-family: system-ui;
+}
+
+body {
+    height: 200%;
+    width: 200%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    
+}
+
+.sidebar {
+    width: 200px;
+    position:absolute;
+    top: 20px;
+    left: 10px;
+    bottom: 0;
+    /* overflow: auto; */
+    margin-left: 70px;
+    
+}
+
+.content {
+    position: absolute;
+    left: 230px;
+    width: 1080px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.09);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checked {
+    color: orange;
+}
+
+#menu {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 100px);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+}
+
+.card {
+    width: 250px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+
+.card>span {
+    font-size: 12px;
+    margin: 5px 0px 5px 0px;
+    display: block;
+}
+
+.card>div>span {
+    font-size: 10px;
+}
+
+#brand>img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+#brand {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 5px);
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    cursor: pointer;
+}
+
+#size {
+    display: grid;
+    grid-template-columns: repeat(4, 43px);
+    grid-template-rows: repeat(auto, 10px);
+    grid-row-gap: -10px;
+    cursor: pointer;
+}
+
+.num-div {
+    border: 1px solid grey;
+    height: 20px;
+    width: auto;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    border-collapse: collapse;
+    margin: 5px;
+}
+
+.num-div:hover {
+    background-color: grey;
+    color: white;
+}
+
+.price-div,
+.collection-div, .type-div, .width-div, .sustainable-div{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    cursor: pointer;
+}
+
+.collection-div {
+    margin: 2px 0px;
+    width: 165px;
+}
+
+#color>div {
+    display: flex;
+    justify-content: flex-start;
+    width: 140px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.color-div {
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    display: inline;
+    margin: 0px 10px;
+    
+}

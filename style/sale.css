@@ -1,0 +1,167 @@
+* {
+    font-family: system-ui;
+}
+
+body {
+    height: 200%;
+    width: 200%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    bottom: 0;
+    overflow: auto;
+    margin-left: 80px;
+}
+
+h4 {
+    margin: 30px 0px 5px 0px;
+    padding: 0;
+}
+
+.category-div>span {
+    font-size: 12px;
+    color: rgb(49, 49, 49);
+}
+
+.content {
+    position: absolute;
+    left: 320px;
+    width: 1080px;
+}
+
+.content-sales-div {
+    display: flex;
+}
+
+.sales-div {
+    height: 170px;
+    width: 170px;
+    padding-top: 30px;
+}
+
+.content-sales-div>div {
+    border: 2px solid grey;
+    min-height: 130px;
+    min-width: 212px;
+    text-align: center;
+    padding-top: 60px;
+    margin: 20px;
+}
+
+#card-div {
+    height: 300px;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    cursor: pointer;
+}
+
+#card-div>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+#banner-div {
+    height: 280px;
+    width: 94%;
+    margin-top: 70px;
+    cursor: pointer;
+
+}
+
+#banner-div>img {
+    height: 100%;
+    width: 100%;
+}
+
+#box-div>div {
+    height: auto;
+    width: 94%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    cursor: pointer;
+}
+
+#box-div>div>img {
+    height: 100%;
+    width: 100%;
+}
+
+#box-div>h2 {
+    text-align: center;
+}
+
+.coursel-slider {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+    padding: 20px;
+}
+
+.row>div>div>span {
+    display: block;
+    font-size: 14px;
+}
+
+.row>div>div {
+    padding: 10px;
+}
+
+.row>div>div :hover {
+    transform: translatey(5px);
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+
+.col-md-3 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.slide-btn {
+    margin: auto;
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    position: absolute;
+}
+
+.left {
+    left: 100px;
+}
+
+.right {
+    right: 160px;
+}
+
+.f-size {
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+}
