@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* --------------------------------- top navbar style starts here ---------------------------- */
+/* nav styling */
+#top_nav {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 92.5%;
+    height: 50px;
+    margin: auto;
+    padding-top: 14px;
+    /* position: sticky;
+    z-index: 10;
+    background-color: white;
+    top: 0%; */
+}
+
+#top_nav>div:nth-child(2) {
+    display: flex;
+    font-size: 13px;
+    text-align: center;
+}
+
+#top_nav>div:nth-child(2) {
+    margin: 20px;
+    color: #333333;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top_nav>div:nth-child(2) div {
+    border: 1px solid rgb(212, 199, 199);
+    width: 18%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#top_nav>div:nth-child(2) div img {
+    width: 25px;
+    height: 25px;
+}
+
+
+#top_nav>div:nth-child(2) input {
+    font-size: 14px;
+    border: none;
+    border: 1px solid rgb(212, 199, 199);
+    width: 40%;
+    padding-left: 38px;
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUn8-WzsjUa0NJ71w1B9yj9XZ8rPVzWq0ISQ&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: 4%;
+    background-size: 20px
+}
+
+#top_nav>div:nth-child(2) p:hover {
+    color: #008fdb;
+    cursor: pointer;
+}
+
+#bag_btn {
+    border-radius: 0%;
+    width: 16px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: -29px;
+    margin-top: 17px;
+    background-color: black;
+    color: white;
+}
+
+/* --------------------------------- top navbar style ends here --------------------------------- */
+
+/* --------------------------------- bottom navbar style starts here ---------------------------- */
+
+#bottom_nav {
+    /* border: 1px solid blue; */
+    padding: 7px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    color: #333333;
+    font-size: 13px;
+}
+
+#bottom_nav>div>p:hover {
+    color: #008fdb;
+    cursor: pointer;
+}
+
+/* dropdown styling */
+
+#bottom_nav .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: #ffffff;
+    min-width: 160px;
+    width: 100%;
+    border: 1px solid rgb(235, 227, 227);
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+    padding-bottom: 7px;
+}
+
+
+
+#bottom_nav .dropdown-content a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+#bottom_nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content p {
+    font-size: 12px;
+}
+
+.dropdown-content h4 {
+    margin: 0px;
+}
+
+.dropdown-content p:hover,
+.dropdown-content h4:hover {
+    text-decoration: underline;
+}
+
+/* categories buttons  */
+
+
+#new_arrivals_parent p:hover {
+    cursor: pointer;
+    color: #008fdb;
+}
+
+#new_arrivals {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+
+#new_arrivals img {
+    width: 100%;
+    cursor: pointer;
+}
+
+#new_arrivals p {
+    cursor: pointer;
+}
+
+#new_arrivals>div {
+    width: 20%;
+}
+
+
+#men {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    /* margin-left: -150px; */
+    gap: 20px;
+    margin: auto;
+}
+
+#men p {
+    margin: 0px;
+}
+
+#men>div {
+    width: 20%;
+}
+
+#women {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+#women p {
+    margin: 0px;
+}
+
+#women>div {
+    width: 20%;
+}
+
+#boys {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+#boys p {
+    margin: 0px;
+}
+
+#boys>div {
+    width: 20%;
+}
+
+#girls {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+#girls p {
+    margin: 0px;
+}
+
+#girls>div {
+    width: 20%;
+}
+
+#clothing {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+#clothing p {
+    margin: 0px;
+}
+
+#clothing>div {
+    width: 20%;
+}
+
+#accessories {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+#accessories p {
+    margin: 0px;
+}
+
+#accessories>div {
+    width: 20%;
+}
+
+#sale {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 80%;
+    gap: 20px;
+    margin: auto;
+}
+
+#sale p {
+    margin: 0px;
+}
+
+#sale>div {
+    width: 20%;
+}
+
+/* search functionality styling */
+#search_div {
+    margin: auto;
+    border: 1px solid rgb(238, 231, 231);
+    width: 451px;
+    height: 450px;
+    overflow: auto;
+    padding-top: 20px;
+
+}
+
+#search_div::-webkit-scrollbar {
+    display: block;
+}
+
+#search_content {
+    display: none;
+}
+
+#card {
+    margin: auto;
+    border-bottom: 1px solid rgb(228, 220, 220);
+    border-bottom: 1px solid rgb(228, 220, 220);
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    align-items: center;
+    line-height: 2px;
+}
+
+#card img {
+    width: 100px;
+}
+
+#card p {
+    font-size: 14px;
+}
+
+
+/* ---------------------------------- bottom navbar style ends here ------------------------------------------ */
+
+/* ---------------------------------- body style starts here ------------------------------------------ */
+
+
+
+
+/* ------------- Steps Section ------------  */
+#outer-body{
+    /* border: 1px solid blue; */
+    margin: 20px 2px;
+}
+
+#top-section{
+    margin: auto;
+    text-align: center;
+    height: 30px;
+    width: fit-content;
+    /* border: 1px solid red; */
+}
+#top-section > div {
+    margin: auto;
+    display: flex;
+}
+.circle{
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+#top-section > div > div:last-child{
+    background-color: white;
+    color: black;
+}
+
+.horizontal-gap-line{
+    margin: 0 5px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    height: 15px;
+    width: 100px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+#bottom-section {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+}
+.steps {
+    display: block;
+    font-size: 14px;
+    line-height: 19.88px;
+    text-align: center;
+    height: 19.87px;
+    width: 150px;
+}
+/* --------------------------------------------- */
+#heading{
+    text-align: center;
+    width: 90%;
+    margin: 40px auto;
+    /* border: 1px solid green;*/
+}
+
+h1 {
+    padding: 10px 65px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.49998px;
+    line-height: 33px;
+    /* text-align: left; */
+}
+
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgb(181, 181, 181);
+}
+#main-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px dashed green; */
+}
+
+
+#left-section {
+    /* border: 1px solid red; */
+    width: 65%;
+    
+}
+#left-input-section {
+    padding: 12px;
+}
+#left-input-section > h3{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    line-height: 22.4px;
+}
+
+form{
+    /* border: 1px solid red; */
+    padding: 10px 5px;
+}
+
+.input-group {
+    margin-bottom: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    /* border: 1px dashed blue; */
+}
+
+.input-box {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.input-box .userInput {
+    padding: 12px 10px; 
+    width: 100%;
+}
+
+#delivery-section{
+    width: 75%;
+    /* border: 1px solid red; */
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+#delivery-section > h4 {
+    font-size: 11.7px;
+    font-weight: 700;
+    line-height: 16.38px;
+}
+.delivery-type {
+    position: relative;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.delivery-type label{
+    font-size: 14px;
+    line-height: 25.1999px;
+}
+.delivery-type span {
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.88px;
+}
+
+
+#continue-payment-section p{
+    color: #707070;
+    font-size: 13px;
+    line-height: 18.46px;
+}
+#continue-payment-section p:nth-child(2){
+    margin-bottom: 20px;
+}
+
+#continue-payment-section button{
+    font-size: 18.66px;
+    font-weight: 700;
+    line-height: 18.66px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: 46.6562px;
+    width: 386.891px;
+    margin: 0 0 13px 0;
+    padding: 13px;
+    border: 1px solid white;
+    /* display: block; */
+    cursor: pointer;
+    background-color: #008FDB;
+    color: #fff;
+}
+#continue-payment-section button:hover{
+    background-color: #0081c6;
+}
+
+ /* ----------  RIGHT SECTION CSS------- */
+#right-section {
+    width: 35%;
+    /* border: 2px solid black; */
+    padding: 12px;
+}
+
+#purchase-summary {
+    /* width: 100%; */
+    padding:20px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+#purchase-summary p {
+    font-size: small;
+    font-weight: 100;
+}
+
+.info-group {
+    padding: 8px;
+}
+
+#bag-item-count hr{
+    margin: 6px 0;
+}
+#bag-item-count p {
+    font-size: small;
+    font-weight: 100;
+}
+
+#coupon-section {
+    display: none;
+    margin: 8px 2px;
+}
+#coupon-apply-btn {
+    width: 25%;
+    color: #0081c6;
+    border: 1px solid #0081c6;
+}
+
+#enter-coupon-code {
+    display: flex;
+    justify-content: space-between;
+}
+#enter-coupon-code:hover{cursor: pointer;}
