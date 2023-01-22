@@ -91,9 +91,6 @@ search_input.addEventListener("input", searchFilter);
 document.querySelector("body").addEventListener("click", () => {
   search_content.style.display = "none";
 });
-// search_input.addEventListener("click",()=>{
-//  search_content.style.display="none"
-// })
 
 let data_length = document.querySelector("#data_length");
 

@@ -57,8 +57,7 @@ body {
   }
 
   #bottom_div {
-    /* display: flex;
-    flex-direction: column; */
+    
     width: 25%;
     margin: auto;
     padding-top: 15px;
@@ -73,7 +72,6 @@ body {
   #bottom_div > button {
     border: 1.5px solid rgb(0, 0, 0);
     width: 100%;
-    /* margin: 15px 0px; */
     margin-top: 15px;
     margin-bottom: 30px;
     padding: 10px 0px;
