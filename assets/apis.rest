@@ -1,0 +1,60 @@
+
+
+
+
+
+
+POST https://63c9569d320a0c4c95466357.mockapi.io/fashionline/users
+
+Content-Type: application/json
+
+{
+  "first_name": "kapil",
+  "last_name": "dev",
+  "dob": "13/10/1989",
+  "email": "umes7@gmail.com",
+  "password": "123456",
+  "registeredOn": "19/01/2023",
+  "orders": [{
+    "id": 1,
+    "quantity":2,
+    "product_card_href": "https://www.finishline.com/store/men/shoes/_/store/product/mens-nike-air-force-1-low-casual-shoes/prod795980?styleId=CW2288&colorId=111",
+    "productImage": "https://media.finishline.com/s/finishline/CW2288_111?$Main$&layer0=[h=245&w=245&bg=rgb(237,237,237)]&h=245&w=245",
+    "sc_ckEbSK": "5 colors",
+    "productImage2": "https://media.finishline.com/s/finishline/CW2288_111?&layer0=[h=52&w=52&bg=rgb(237,237,237)]&h=52&w=52",
+    "productImage3": "https://media.finishline.com/s/finishline/CW2288_001?&layer0=[h=52&w=52&bg=rgb(237,237,237)]&h=52&w=52",
+    "productImage4": "https://media.finishline.com/s/finishline/DH7561_101?&layer0=[h=52&w=52&bg=rgb(237,237,237)]&h=52&w=52",
+    "productImage5": "https://media.finishline.com/s/finishline/DH7561_107?&layer0=[h=52&w=52&bg=rgb(237,237,237)]&h=52&w=52",
+    "productImage6": "https://media.finishline.com/s/finishline/DR9867_102?&layer0=[h=52&w=52&bg=rgb(237,237,237)]&h=52&w=52",
+    "product_name": "Men's Nike Air Force 1 Low Casual Shoes",
+    "fullPrice": "110.00",
+    "sc_lbVpMG": "(949)",
+    "specialSalesText": "Trending",
+    "product_card": {
+      "context": "https://schema.org",
+      "type": "Product",
+      "name": "Men&apos;s Nike Air Force 1 Low Casual Shoes",
+      "sku": "CW2288_111",
+      "image": "//media.finishline.com/s/finishline/CW2288_111?$Main$",
+      "url": "store/product/mens-nike-air-force-1-low-casual-shoes/prod795980?styleId=CW2288&amp;colorId=111",
+      "brand": {
+        "type": "Brand"
+      },
+      "aggregateRating": {
+        "type": "AggregateRating",
+        "ratingValue": 4.8,
+        "reviewCount": 949
+      },
+      "colors": [
+        "White"
+      ]
+    },
+    "productImage7": "",
+    "productImage8": "",
+    "productImage9": "",
+    "productImage10": "",
+    "productImage11": "",
+    "productImage12": ""
+  }]
+  
+ }

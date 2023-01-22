@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #logo {
+    border: 1px solid rgb(236, 230, 230);
+    text-align: center;
+    padding: 4px;
+    margin-top: 3px;
+  }
+
+  .text_align_center {
+    text-align: center;
+  }
+  form {
+    width: 25%;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    color: #333333;
+    padding-bottom: 15px;
+  }
+  u:hover {
+    color: #008fdb;
+    cursor: pointer;
+  }
+  form input {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  form > p {
+    font-size: 12px;
+  }
+  form > u {
+    font-size: 14px;
+    color: black;
+  }
+  hr {
+    border: 1px solid rgb(236, 230, 230);
+  }
+
+  #create_account_btn {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #73fbf4;
+    border: none;
+  }
+  #create_account_btn:hover {
+    background-color: #02837c;
+  }
+
+  #bottom_div {
+    /* display: flex;
+    flex-direction: column; */
+    width: 25%;
+    margin: auto;
+    padding-top: 15px;
+    font-size: 15px;
+  }
+  #bottom_div > h2 {
+    font-weight: bolder;
+  }
+  #bottom_div > h4 {
+    margin: 0px;
+  }
+  #bottom_div > button {
+    border: 1.5px solid rgb(0, 0, 0);
+    width: 100%;
+    /* margin: 15px 0px; */
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding: 10px 0px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  #bottom_div > button:hover {
+    color: white;
+    background-color: black;
+  }
+  #bottom_div h4:nth-child(2){
+   padding-top: 10px;
+  }
+  #bottom_div img:nth-child(4){
+   padding-top: 3px;
+  }
+  #titles h5:nth-child(2){
+    margin: 0px; 
+    line-height: 0px;
+     padding-top: 14px;
+  }
+  #titles p:nth-child(3){
+    font-size: 14px;
+  }
