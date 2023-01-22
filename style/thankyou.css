@@ -343,6 +343,7 @@
     height: fit-content;
     border: 1px solid black;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #heading {
@@ -381,4 +382,123 @@ a {
 
 #message p {
     text-align: center;
+}
+
+
+/* ---------------- Footer part ----------------- */
+
+#twenty{
+    display: flex;
+    margin-top: 500px;
+    width: 90%;
+    margin: auto;
+    gap: 3px;
+    font-size: 13px;
+   
+}
+#twenty>div:hover{
+    background-color: #000000;
+}
+#twenty i{
+    font-size: 40px;
+    margin-left: 10px;
+}
+#twenty>div{
+    display: flex;
+    gap:15px;
+    padding:20px 20px 5px 20px;
+    background-color: #333;
+    color: white;
+}
+#twenty p{
+    margin-top: 10px;
+}
+#footer1{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+}
+#footer1>div:nth-child(1)>div{
+    display: flex;
+}
+#footer1 img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#footer1 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer1>div:nth-child(2)>div{
+    display: flex;
+}
+#footer1 strong{
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+#footer1 a{
+    color: black
+}
+#footer1>div:nth-child(2) img{
+    width: 60px;
+    height: 60px;
+    padding-right: 10px;
+}
+#footer1>div:nth-child(1){
+    width: 22%;
+}
+#footer1>div:nth-child(2){
+    width: 25%;
+}
+#footer1 input{
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+}
+#line{
+    width: 83%;
+    margin: auto;
+    margin-top: 10px;
+    color: #4242421a;
+}
+#footer2{
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+#footer2>div{
+    display: flex;
+}
+#footer2 img{
+    width: 28px;
+    height: 28px;
+}
+#footer2>div:last-child{
+    gap: 20px;
+}
+#footer2>div:nth-child(1){
+    gap: 20px;
+}
+#footer2 p{
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#footer2>div:nth-child(2){
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin-top: 10px;
+}
+#footer2>div:nth-child(2) i{
+    font-size: 30px;
+    color: #424242b0;
 }

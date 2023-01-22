@@ -231,7 +231,7 @@ let productCardGenerator = () => {
         }).join(""));
     }else{
         productList.innerHTML = `
-            <h2>Cart is empty</h2>
+            <h3 id="empty-msg">Cart is empty</h3>
         `
     }
 }
