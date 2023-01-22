@@ -1,0 +1,59 @@
+<div class="products">
+                        <div>
+                            <img src="https://media.finishline.com/s/finishline/53890001_001?$default$&h=150&w=150&bg=rgb(237,237,237)&fmt=webp" alt="">
+                        </div>
+                        <div>
+                            <div>
+                                <p><b>Men's Puma Team Official Emblem Graphic Crewneck Sweatshirt.</b></p>
+                            </div>
+                            <p>Size: M</p>
+                            <p>Color: Black/Varsity Green</p>
+                            <p><a href="#">Save for later</a></p>
+                        </div>
+                        <div>
+                            <div class="qty-btn">
+                                <i class="fa-solid fa-minus"></i>
+                                <div class="quantiy" style="width: fit-content; height: fit-content;">Qty 0</div>
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>$20.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a id="remove-item" href="#"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="products">
+                        <div>
+                            <img src="https://media.finishline.com/s/finishline/53890001_001?$default$&h=150&w=150&bg=rgb(237,237,237)&fmt=webp" alt="">
+                        </div>
+                        <div>
+                            <div>
+                                <p><b>Men's Puma Team Official Emblem Graphic Crewneck Sweatshirt.</b></p>
+                            </div>
+                            <p>Size: M</p>
+                            <p>Color: Black/Varsity Green</p>
+                            <p><a href="#">Save for later</a></p>
+                        </div>
+                        <div>
+                            <div style="width: fit-content; height: fit-content;">
+                                <a href=""><i class="fa-solid fa-minus"></i></a>
+                                <span>Qty 1</span>
+                                <a href=""><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>$20.00</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a id="remove-item" href="#"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+
+                    </div> -->

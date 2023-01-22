@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag | View Bag and Checkout</title>
+    <script src="https://kit.fontawesome.com/0db55d1582.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="heading">
+        <h1>YOUR BAG</h1>
+    </div>
+    <div id="main-container">
+
+        <!-- ------------------------- Left section ------------------------- -->
+        <div id="left-section">
+            <div class="cart">
+                <table id="table-head">
+                    <tr>
+                        <th width="386" class="product-img">Product</th>
+                        <th width="110">Quantity</th>
+                        <th width="100">Price</th>
+                        <th style="padding-left: 10px;" width="90"><button id="remove-all">Remove all</button></th>
+                    </tr>
+                </table>
+                <hr>
+                <div id="product-list">
+                    <!------------------ Append your product here. ---------------->
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------------------- Right section --------------------------->
+        <div id="right-section">
+            <div id="promo">
+                <p>Get <strong>400</strong> STATUS points with this purchase. More points means more rewards.</p>
+            </div>
+
+
+            <div id="purchase-summary">
+                <div class="info-group">
+                    <p><strong>Purchase Summary</strong></p>
+                </div>
+                <hr>
+                <div class="info-group">
+                    <div id="enter-coupon-code">
+                        <p style="padding-bottom: 3px;">Enter a coupon code</p>
+                        <span id="show-coupon-field">+</span>
+                    </div>
+                    <div id="coupon-section">
+                        <input type="text" id="coupon" placeholder="Coupone Code"
+                            style="padding: 12px 10px; width: 100%;">
+                        <button id="coupon-apply-btn">Apply</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-group delivery-type">
+                    <p>Subtotal:</p>
+                    <p id="product-price">$79.00</p>
+                </div>
+                <div class="info-group delivery-type">
+                    <p>Estimated Shipping:</p>
+                    <p id="shipping-charges">$8.00</p>
+                </div>
+                <div class="info-group delivery-type">
+                    <p>Tax:</p>
+                    <p>TBD</p>
+                </div>
+                <hr style="border: none; height: 2px; background-color:#333;;">
+                <div class="info-group delivery-type">
+                    <p><strong>Total:</strong></p>
+                    <p id="total-bill"><strong style="color: #333;">$87.00</strong></p>
+                </div>
+
+                <p style="padding: 10px 2px;">Or 4 interest-free installments with <strong>Klarna,</strong> or
+                    <strong>afterpay </strong><a href="#">Info</a>
+                </p>
+
+                <!---------------- Purchasing Buttons --------------->
+                <div style="margin-top: 30px;" id="continue-payment-section">
+                    <button type="submit" class="continue-to-payment-btn">Proceed to Checkout</button>
+
+                    <button type="submit" class="continue-to-payment-btn afterpay-logo"><img style="width: 60%;"
+                            src="./svg/afterpay.svg" alt=""></button>
+
+                    <button type="submit" class="continue-to-payment-btn">+ More payment option</button>
+
+                    <button type="submit" class="continue-to-payment-btn"><img style="width: 20%;"
+                            src="./svg/Klarna _ Shop, Track Purchases, Make Payments-1.svg" alt=""> Express
+                        checkout</button>
+
+                    <button type="submit" class="continue-to-payment-btn"><img style="width: 23%;" src="./svg/paypal.svg"
+                            alt=""></button>
+
+                    <span id="show-less-opt"> - <a href="#">Fewer Payment Options</a></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="./Data.js"></script>
+<script src="./cart.js"></script>
+
+</html>
