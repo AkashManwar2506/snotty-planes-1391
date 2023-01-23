@@ -9,3 +9,6 @@ The functionalities added in website are
   2. Sign up
   3. Add to cart
   4. Json Server
+
+
+<img width="1440" alt="Screenshot 2023-01-23 at 12 10 25 PM" src="https://user-images.githubusercontent.com/112842012/213981048-28ea6383-c905-4062-86ef-3858cddda032.png">
